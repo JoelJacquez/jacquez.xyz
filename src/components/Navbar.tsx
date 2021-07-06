@@ -4,26 +4,36 @@ import { Link } from 'gatsby';
 const Navbar = () => {
   return (
     <>
-      <nav>
-        <span>
-          <b>Joel</b>
-          <b>Jacquez</b>
-        </span>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/resume">Resume</Link>
-          </li>
-          <li>
-            <Link to="/portafolio">Portafolio</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-        </ul>
-      </nav>
+      <header>
+        <nav className="navbar">
+          <div className="siteTitle">
+            Joel
+            <span> Jacquez</span>
+          </div>
+          <ul className="navLinks">
+            <li className="navItem">
+              <Link to="/" activeClassName="active">
+                Home
+              </Link>
+            </li>
+            <li className="navItem">
+              <Link to="/resume" activeClassName="active">
+                Resume
+              </Link>
+            </li>
+            <li className="navItem">
+              <Link to="/portafolio" activeClassName="active">
+                Portafolio
+              </Link>
+            </li>
+            <li className="navItem">
+              <Link to="/blog" activeClassName="active">
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </>
   );
 };
