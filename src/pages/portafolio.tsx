@@ -8,8 +8,8 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        <title>Resume</title>
-        <h1>Resume</h1>
+        <title>Portafolio</title>
+        <h1>Portafolio</h1>
         <p>
           I make this following the Gastby tutorial!!
           <span role="img" aria-label="Sunglasses smiley emoji"> 😎 </span>
