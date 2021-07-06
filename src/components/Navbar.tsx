@@ -2,15 +2,12 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 const Navbar = () => {
-
   return (
     <>
       <nav>
         <span>
-          <Link to="/">
-            <b>Joel</b>
-            <b>Jacquez</b>
-          </Link>
+          <b>Joel</b>
+          <b>Jacquez</b>
         </span>
         <ul>
           <li>
@@ -23,12 +20,12 @@ const Navbar = () => {
             <Link to="/portafolio">Portafolio</Link>
           </li>
           <li>
-            <Link to="/">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </nav>
     </>
-  )
-}
+  );
+};
 
 export default Navbar;

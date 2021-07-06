@@ -8,8 +8,8 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        <title>Home Page</title>
-        <h1>Welcome to my Gastby site!</h1>
+        <title>Blog</title>
+        <h1>Blog</h1>
         <p>
           I make this following the Gastby tutorial!!
           <span role="img" aria-label="Sunglasses smiley emoji">
