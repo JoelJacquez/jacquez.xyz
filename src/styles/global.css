@@ -5,7 +5,59 @@
 }
 body {
   font-family: Montserrat, sans-serif;
+  background: #f5f5f5;
+  min-height: 100vh;
+  font-size: 16px;
 }
 .main-content {
   padding-top: 80px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.page {
+  box-shadow: 0 15px 25px 0 rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.page .page-header {
+  padding: 50px 50px 0 50px;
+  background-color: var(--primary-color);
+  background-image: url("../images/pattern-hexagon.png");
+  /* background-image: url("../images/sp_main_bg.⁄png"); */
+  background-size: cover;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+}
+.page-header .author-information-container {
+  grid-column: span 2;
+}
+.author-information-container .author-information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+.author-information .fullName {
+  font-size: 3em;
+  font-weight: 700;
+}
+.author-information .title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.photo-container figure {
+  margin: 0;
+  margin-bottom: -20px;
+  border: 3px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+  background: rgba(255, 255, 255, 0.3);
 }
