@@ -9,7 +9,7 @@ const IndexPage = () => {
     <>
       <Layout>
         <section className="page">
-          <div className="page-header">
+          <div className="page-header home-header ">
             <div className="photo-container">
               <figure className="photo">
                 <StaticImage src="../images/photo.png" alt="" />

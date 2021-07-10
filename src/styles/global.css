@@ -23,13 +23,14 @@ body {
 .page .page-header {
   padding: 50px 50px 0 50px;
   background-color: var(--primary-color);
-  background-image: url("../images/pattern-hexagon.png");
-  /* background-image: url("../images/sp_main_bg.⁄png"); */
-  background-size: cover;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 30px;
+}
+.page-header.home-header {
+  background-image: url("../images/pattern-hexagon.png");
+  background-size: cover;
 }
 
 .page .page-content {
