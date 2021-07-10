@@ -5,6 +5,20 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 // markup
 class IndexPage extends React.Component {
+  state = {
+    age: this.calculateAge('1990-03'),
+  };
+
+  calculateAge(dateString: string) {
+    let today: Date = new Date();
+    let birthDate: Date = new Date(dateString);
+    let age: number = today.getFullYear() - birthDate.getFullYear();
+    let m: number = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
   render() {
     return (
       <>
@@ -56,7 +70,7 @@ class IndexPage extends React.Component {
                   <ul className="info-list">
                     <li>
                       <span className="label">Age</span>
-                      <span className="value">31</span>
+                      <span className="value">{this.state.age}</span>
                     </li>
                     <li>
                       <span className="label">Residence</span>
