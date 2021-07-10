@@ -4,21 +4,26 @@ import Layout from '../components/Layout';
 // styles
 
 // markup
-const IndexPage = () => {
+const ResumePage = () => {
   return (
     <>
       <Layout>
-        <title>Resume</title>
-        <h1>Resume</h1>
-        <p>
-          I make this following the Gastby tutorial!!
-          <span role="img" aria-label="Sunglasses smiley emoji">
-            😎
-          </span>
-        </p>
+        <section className="page">
+          <div className="page-header">
+            <h1>Resume</h1>
+          </div>
+          <div className="page-content">
+            <p>
+              I make this following the Gastby tutorial!!
+              <span role="img" aria-label="Sunglasses smiley emoji">
+                😎
+              </span>
+            </p>
+          </div>
+        </section>
       </Layout>
     </>
   );
 };
 
-export default IndexPage;
+export default ResumePage;
