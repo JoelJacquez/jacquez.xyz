@@ -9,7 +9,7 @@ const PortafolioPage = () => {
     <>
       <Layout>
         <section className="page">
-          <div className="page-header">
+          <div className="page-header portafolio-header">
             <h1>Portafolio</h1>
           </div>
           <div className="page-content">

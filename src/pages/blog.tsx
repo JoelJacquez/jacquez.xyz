@@ -9,7 +9,7 @@ const BlogPage = () => {
     <>
       <Layout>
         <section className="page">
-          <div className="page-header">
+          <div className="page-header blog-header">
             <h1>Blog</h1>
           </div>
           <div className="page-content">

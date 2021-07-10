@@ -42,7 +42,7 @@ body {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  background-image: url("../images/pattern-hexagon.png");
+  background-image: url("../images/pattern-squares-circles.png");
   background-size: cover;
   padding-bottom: 0;
 }
@@ -114,4 +114,17 @@ body {
 .contact-information ul .value a {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.page-header.resume-header {
+  background-image: url("../images/pattern-squares-circles-2.png");
+  background-size: cover;
+}
+.page-header.portafolio-header {
+  background-image: url("../images/pattern-squares-circles-triangles.png");
+  background-size: cover;
+}
+.page-header.blog-header {
+  background-image: url("../images/pattern-squares-circles-2.png");
+  background-size: cover;
 }
