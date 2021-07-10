@@ -10,7 +10,7 @@ body {
   font-size: 16px;
 }
 .main-content {
-  padding-top: 80px;
+  padding-top: 100px;
   max-width: 1024px;
   margin: auto;
 }
@@ -31,6 +31,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 30px;
 }
+
+.page .page-content {
+  padding: 20px 30px 50px 30px;
+}
+
 .page-header .author-information-container {
   grid-column: span 2;
 }
@@ -54,10 +59,51 @@ body {
 
 .photo-container figure {
   margin: 0;
-  margin-bottom: -20px;
+  margin-bottom: -15%;
   border: 3px white solid;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-content .aboutme-section {
+  display: flex;
+  gap: 1em;
+  padding: 0 30px;
+  margin: 0;
+}
+.aboutme-section .about-me h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.aboutme-section .about-me h3 span {
+  color: var(--primary-color);
+}
+.aboutme-section .about-me p {
+  font-weight: 400;
+  font-size: 1.01em;
+  line-height: 1.5em;
+}
+
+.contact-information ul {
+  list-style: none;
+  padding-left: 30px;
+  width: max-content;
+}
+.contact-information ul li {
+  margin: 7px 0;
+  text-align: left;
+}
+.contact-information ul .label {
+  width: 150px;
+  display: inline-block;
+}
+.contact-information ul .value {
+  color: #9e9e9e;
+}
+.contact-information ul .value a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
